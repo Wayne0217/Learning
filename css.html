@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>day2</title>
+<link rel="stylesheet" href="style.css"/>  <!-- 套用css方法 style.css(.) -->
+    </head>
+        <body>
+            <!-- css -->
+            <div style="color:red; font-size: 20px;" >  <!-- px像素 -->
+                <h1 style="color: aqua;;">css教學</h1>
+                <p style="background-color: blue;">這是一個段落</p>
+                <p style="border: 5px dashed black; max-width:1000px;">這是二個段落</p>      <!-- border外框像素 solid實線 dashed虛線 -->
+            </div>
+            <h2 style="background-color: #ff6666; color:#228B22;">css教學2-RGB</h2>
+            <p style="border:7px solid rgb(60, 66, 94);">這是一個段落</p>
+            <!-- padding & margin -->
+            <h1>css教學3</h1>
+            <div style="padding:10px 30px 10px 10px; margin-top:-20px; background-color: lightblue; border:5px dashed black;">今天學padding&margin</div>
+            <hr/>
+                <!-- float --> <!-- float物件漂浮:方向 -->
+            <img src="自學20220401-2 企鵝櫻桃武士.jpg" width="200px" style="float:left;" />
+            <p>我叫陳奕文，出生於台中市東勢區，2000年搬家到台中市北區，家中4名成員排行老么，
+                畢業於新民高級中學資訊科，我的個性溫和不喜歡與人爭執，高中時曾參加紅十字青少
+                年服務隊的社團活動，在社團活動除了結識其他科系的朋友也學到了平時不會接觸到的
+                技能，例如童軍繩使用與紮營的技巧，因為喜歡團隊合作的關係，平日下班時喜歡玩同
+                樂型的遊戲，假日喜歡揪朋友玩桌遊等團康遊戲，也喜歡追影集，有時會到勤美綠園道
+                等地踏青。</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <hr/>
+            <ul style="float:left; background-color:lightgreen; margin:10px; padding:5px;" >
+                <li>主頁</li>
+                <li>關於我</li>
+                <li>作品</li>
+                <li>聯絡我</li>
+            </ul>
+                <p>我叫陳奕文，出生於台中東勢區，今年28，畢業於新民高級中學資訊科，
+                    我個性與人相處比較慢熟，處理事情時常會考慮得比較周全，經常站在客戶的角度想，
+                    有計畫的完成作業，平時喜歡追劇、上健身房，偶爾會跟家人去爬山。
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <hr/>
+                <!-- display -->
+                <!-- block & inline -->
+                <p style="display:inline;">你好</p>    <!-- inline按照文字距離 -->
+                <p style="display:inline;">哈哈</p>
+                <span style="display:block;">span1</span>   <!-- block吃整行 -->
+                <span style="display:block;">span2</span>
+                <br/>
+                <br/>
+                <!-- position -->
+                <h2>position教學</h2>
+                <div style="position: relative; left:20px; top:30px; width:80px; height: 80px; background-color: blue;"></div>
+                <div style="width:120px; height: 120px; background-color: red;"></div>
+                <br/>
+                <br/>   <!-- position: absolute絕對定位 -->    <!-- position: relative相對定位 -->
+                <div style=" padding:20px; border:5px solid red;">
+                    <div style="position: relative; padding:20px; border:5px solid red;">
+                        <div style="position: absolute; top:0px; right:0px; width:20px; height:20px; background-color: blue;"></div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <!--opacity & border-radius -->
+                <h2>opacity & border-radius教學</h2>
+                <!-- opacity 設定透明度1最深~0透明 -->
+                <!-- border-radius設定物件圓弧度px -->
+                <p style="position: relative; top:65px; left:25px;">你好</p>
+                <div style="opacity: 0.5; border-radius: 40px; width: 80px; height: 80px; background-color: rgb(107, 107, 238);"></div>
+                <br/>
+                <br/>
+                    <!-- class & id -->
+                <h2 id="css-h2"> class & id 教學</h2>   <!-- id="唯一識別名稱"(#) -->
+                <p class="food background-gray">蝦仁滑蛋</p>    <!-- class="識別名稱"(.) -->
+                <p class="food">牛肉麵</p>
+                <p class="food">卡啦雞腿堡</p>
+                <p class="person">白冰冰</p>
+                <p class="person">張偉</p>
+                <p class="wen">陳奕文</p>
+                <br/>
+                <br/>
+                <!-- 更多套用css的方法 --> <!-- style.css (*)套用所有標籤 -->
+                <h2>更多套用css的方法教學</h2>
+                <p class="class-1">第一個段落</p>
+                <p class="class-2">第二個段落</p>
+                <h3 id="id-1">wayne你好</h3>
+                <h3>wen你好</h3>
+                <ul>
+                    <li><a class="goo-1" href="https://www.google.com.tw/">GOOGLE</a></li>
+                    <li><a class="face-1" href="https://www.facebook.com/">FACEBOOK</a></li>
+                    <li>INTERNET</li>
+                </ul>
+                <input type="text" placeholder="請輸入帳號"/>
+                <br/>
+                <input type="password" placeholder="請輸入密碼" />
+                <br/>
+                <br/>
+                <!-- flex -->
+                <div class="container">    <!-- flex占用框架大小比例 -->
+                <div class="box-1">區塊1</div>  <!-- order排框架順序1最小最左邊 -->
+                <div class="box-2">區塊2</div>  <!-- flex-wrap: wrap 框架受空間擠壓自動換行 -->
+                <div class="box-3">區塊3</div>  <!-- flex-direction: column 框架排列方向更改 -->
+                <div class="box-2">區塊2</div>  <!-- justify-主軸位置 content置中 -->
+                <div class="box-1">區塊1</div>  <!-- align-次軸位置 content置中 items區間 self貼齊 -->
+                <div class="box-3">區塊3</div>  <!-- flex-start,end, center, space-, -->
+                <div class="box-2">區塊2</div>
+                <div class="box-1">區塊1</div>
+                </div>
+                <br/>
+                <br/>
+                <!-- animation -->
+                <h2>animation教學</h2>  
+                <div class="box box-animation"></div> 
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </body>
+</html>

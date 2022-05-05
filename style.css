@@ -1,0 +1,97 @@
+/*套用css方法 style.css(.)*/
+.food{              /*指定標籤種類換色*/
+    color:red;
+}
+
+.person{
+    color: blue;
+}
+
+.background-gray{
+    background-color:gray;
+}
+
+#css-h2{
+    color:aquamarine;
+    background-color: black;
+}
+.wen{
+    color:brown
+}
+#id-1 , .class-1{   /*指定雙標籤換色,id為唯一識別*/
+    color:rgb(199, 37, 158);
+}
+*{
+    color:red;
+}
+ul .goo-1{
+    color:aqua ;
+    background-color: black;
+}
+.face-1{ /*指定標籤換色*/
+    color:rgb(216, 141, 42);
+    background-color: black;
+}
+
+[type]:hover{  /*指定輸入框換色與游標互動*/
+    background-color: gray;
+}
+h1{
+    color:black
+}
+
+     /*指定標籤換色與游標互動*/
+
+
+.container{
+    display:flex;   
+    flex-wrap: wrap;    /*flex-wrap: wrap 框架受空間擠壓自動換行*/
+    flex-direction: row;    /*flex-direction: row,column 框架排列方向更改*/
+    height:300px;
+    border:3px dashed red;
+    justify-content: center;   /*justify-主軸位置 content置中*/
+    align-content: center;   /*align-次軸位置 content置中 items區間 self貼齊*/   /*flex-start,end, center, space-,*/
+
+}
+
+.container div{
+    border:1px solid black;
+    padding:10px;
+    width:100px;
+    height: 20px;
+}
+
+.box-1{     /*flex占用框架大小比例*/
+    /*order排框架順序1最小最左邊*/
+
+}
+
+.box-2{
+ 
+}
+
+.box-3{
+ 
+
+}
+
+@keyframes change-color{
+    0% {background-color: red; top:10px; left:10px;}
+    20% {background-color: orange; top:30px; left:30px;}
+    40% {background-color: yellow; top:50px; left:50px;}
+    60% {background-color: green; top:70px; left:70px;}
+    80% {background-color: blue; top:90px; left:90px;}
+    100% {background-color: purple; top:110px; left:110px;}
+}
+.box{
+    width:200px;
+    height:200px;
+    background-color: gray;
+    position: relative;             /*position: relative;設定移動*/
+}
+.box-animation:hover{               /*.box-animation:hover設定滑鼠游標互動*/
+    animation-name: change-color;   /*animation-name: change-color;模式:變換顏色*/
+    animation-duration: 1s;         /*animation-duration: 1s; 變換時間:1秒*/
+    animation-iteration-count: 1;    /*animation-iteration-count:1或infinite; 變換次數:1或無限*/
+                                    /*animation-delay: 2s; 變換時間間隔:2秒*/
+}
