@@ -51,7 +51,7 @@ listContent.forEach(function(item){
 
 addedBtn.addEventListener('click', function(){
 
-    listContent.unshift({
+    listContent.push({
         content: content.value,
         date: date.value
     })
