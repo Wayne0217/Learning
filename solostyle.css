@@ -1,0 +1,52 @@
+body{
+    background-color: antiquewhite;
+}
+
+.fa-1 {
+    background-color: rgb(230, 214, 214);
+}
+
+  .v1 {
+    display:flex;   
+    flex-wrap: wrap;    /*flex-wrap: wrap 框架受空間擠壓自動換行*/
+    flex-direction: row;    /*flex-direction: row,column 框架排列方向更改*/
+    height:300px;
+    border:3px dashed red;
+    justify-content: center;   /*justify-主軸位置 content置中*/
+    align-content: center;
+}
+
+.fa-1{
+    display:flex;   
+    flex-wrap: wrap;    /*flex-wrap: wrap 框架受空間擠壓自動換行*/
+    flex-direction: row;    /*flex-direction: row,column 框架排列方向更改*/
+    height:100px;
+    border:1px solid black;
+    justify-content: center;   /*justify-主軸位置 content置中*/
+    align-content: center;
+}
+
+@keyframes change-color1{
+    0% {color: red;}
+    20% {color: orange;}
+    40% {color: yellow;}
+    60% {color: green;}
+    80% {color: blue;}
+    100% {color: purple;}
+}
+
+.pa-1{
+    display:flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:100px;
+    justify-content: center;   /*justify-主軸位置 content置中*/
+    align-content: center;
+    font-family: sans-serif;
+}
+
+.pa-1:hover{ 
+    animation-name: change-color1; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
